@@ -18,17 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMv-KK-OT3">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="101.66666666666669" width="393" height="716.33333333333326"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2J-x5-NEI">
+                                <rect key="frame" x="159" y="59" width="75" height="42.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C20-iQ-Mj0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XMv-KK-OT3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G9B-2u-pSz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XMv-KK-OT3" secondAttribute="bottom" id="bmC-93-nfS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XMv-KK-OT3" secondAttribute="trailing" id="cel-Vq-YQA"/>
-                            <constraint firstItem="XMv-KK-OT3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mEe-hk-kCd"/>
+                            <constraint firstItem="I2J-x5-NEI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BEB-f3-fLV"/>
+                            <constraint firstItem="XMv-KK-OT3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Db4-P8-s5T"/>
+                            <constraint firstItem="XMv-KK-OT3" firstAttribute="top" secondItem="I2J-x5-NEI" secondAttribute="bottom" id="ZU7-BZ-eO3"/>
+                            <constraint firstItem="XMv-KK-OT3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bex-qs-owc"/>
+                            <constraint firstItem="XMv-KK-OT3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cuf-yy-5Ts"/>
+                            <constraint firstItem="I2J-x5-NEI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dVq-Qe-beK"/>
+                            <constraint firstItem="I2J-x5-NEI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="ord-f8-UMh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -37,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

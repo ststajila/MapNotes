@@ -41,7 +41,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currntLocation = locations[0]
     }
-
+    
+    
+    @IBAction func searchAction(_ sender: Any) {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = "Parks"
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        request.region = MKCoordinateRegion(center: currntLocation.coordinate, span: span)
+        //8.18
+    }
+    
 
 }
 
